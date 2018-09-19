@@ -15,44 +15,81 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../Word-Guess/assets/css/style.css" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <script src="../Word-Guess/assets/javascript/assets"></script>
+
     <style>
-        .row {
-            background-color: fuchsia;
-        }
+        /* .row { */
+            /* background-color:crimson; */
+            /* border: 5px solid darkorange; */
+        /* } */
+
+        /* .col-sm-4 { */
+            /* border: 5px solid darkblue; */
+        /* } */
     </style>
 </head>
 
 <body>
     <div class="jumbotron">
-            <h1 class="display-2">Game Image here</h1>
-        <!-- <div class="row">
-            <div class="col-sm-12 col-md-12">
-                <h1>Isaac Bayon</h1>
+
+        <div class="row">
+            <div class="col-sm-5 col-md-5">
+                <span class="blinking">HANGMAN</span>
+            </div>
+            <div class="col-sm-7 col-md-7">
+                <!-- <img class="stgif" src="https://media.giphy.com/media/3ohhwfZXnlXE0UfFjW/giphy.gif" alt="strange"> -->
             </div>
         </div>
 
-        <h1 class="display-2">Fluid jumbotron</h1>
-        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        <!-- <h1 class="display-2">
+            
+            
+        </h1> -->
 
-        <div class="row">
-            <div class="col-sm-12 col-md-12">
-                <h1>bottom Isaac Bayon</h1>
-            </div>
-        </div> -->
+
+    </div>
 
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-sm-6 col-md-6">
-                <h1>Container.left column for game </h1>
+            <div class="col-sm-1 col-md-1">
+                <!-- <h6>Don't Use</h6> -->
+            </div>
+            <div class="col-sm-4 col-md-4">
+                <!-- <h4>Container.left column for game image </h4> -->
             </div>
             <div class="col-sm-6 col-md-6">
-                    <h1>Container.right column for game </h1>
+                <h3>user plays here</h3>
+                <div class="row">
+                    <p>Guess the person: <span id="underscore"></span></p>
+                </div>
+
+                <div class="row">
+                    <p>Guessed Letters: <span id="guessedLetters"></span></p>
+                </div>
+                                
+                <div class="row">
+                    <p>ALL Guessed Letters: <span id="allGuessedLetters"></span></p>
+                </div>
+
+                <div class="row">
+                    <p>Guesses remaining: <span id="guessesRemaining"></span></p>
+                </div>
+
+                <div class="row">
+                    <p>Games won: <span id="youWon"></span></p>
+                </div>
+
+                <div class="row">
+                    <p>Games lost: <span id="youlost"></span></p>
+                </div>
+            </div>
+            <div class="col-sm-1 col-md-1">
+                <!-- <h6>Don't Use this column</h6> -->
             </div>
         </div>
     </div>
-
+    <!-- <script src="./assets/javascript/game.js"></script> -->
+    <script src="../Word-Guess/assets/javascript/game.js"></script>
 </body>
 
 </html>
