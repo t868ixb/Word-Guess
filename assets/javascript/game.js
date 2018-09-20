@@ -7,6 +7,7 @@ var person = ['eleven', 'will', 'jonathan', 'hopper', 'joyce', 'dustin', 'lucas'
 // 9 is the number of objects in array
 var randomPerson = person[Math.floor(Math.random() * 9)];
 var badguesses = 0;
+var goodguesses = 0;
 
 console.log(randomPerson); // use this to confirm that the selection is random
 
@@ -45,38 +46,21 @@ document.onkeyup = function (event) {
     console.log("Letters in lettersRandomPersonArr " + lettersRandomPersonArr);
 
     for (var i = 0; i < lettersRandomPersonArr.length; i++) {
-
-        if (lettersRandomPersonArr.indexOf(keyPressed) < 0) {
+console.log(lettersRandomPersonArr.length)
+        if (lettersRandomPersonArr.indexOf("keyPressed") < 0) {
             console.log(keyPressed)
-            console.log(lettersRandomPersonArr)
+            console.log("after if statement " + lettersRandomPersonArr)
             badguesses++;
-            console.log("NOT IN ARRAY!!");
-            
+            console.log("num of bad guesses " + badguesses);
+            console.log("NOT IN ARRAY!!");   
         }
         else {
-           
+            goodguesses++;
+            console.log("num of Good guesses " + goodguesses);
             console.log("IN ARRAY!!");
         }
 
-
-        //keep below and reverse if needed.  11:40 PM on Tuesday
-        // for (var i = 0; i < lettersRandomPersonArr.length; i++) {
-        //     var keyPressed = event.key;
-        //     if (keyPressed !== lettersRandomPersonArr[i]) {
-        //         console.log(keyPressed);
-        //         console.log("NOT IN ARRAY!!");
-
-        //         }
-        //         else {
-        //             console.log("IN ARRAY!!");
-        //     }
     }
-    //in class 
-
-    //check if the selected letter is found in lettersRamdomPersonArr
-    // var foundIt = lettersRandomPersonArr.indexOf(keyPressed);
-    // console.log(keyPressed);
-
 
 
     //user selects up to 12 letters (numGuesses).  if the letter is in the word, add it to the 'currentWord" array
